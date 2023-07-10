@@ -12,6 +12,13 @@ wxEND_EVENT_TABLE()
 int currentPlayer = 0;
 
 MainFrame::MainFrame(const wxString& title) : wxFrame(nullptr, wxID_ANY, title) {
+    // Load the icon file
+    wxIcon icon;
+    icon.LoadFile("icon.ico", wxBITMAP_TYPE_ICO);
+                
+    // Set the window's icon
+    SetIcon(icon);
+
     panel = new wxPanel(this); // Create a panel as the main container
     Result = new wxStaticText(panel, wxID_ANY, "Player X Turn...", wxPoint(270, 30), wxDefaultSize, wxALIGN_CENTER); // Display the result text
     wxButton* Reset = new wxButton(panel, RESET_ID, "Reset", wxPoint(30, 20), wxDefaultSize); // Create a reset button
@@ -69,6 +76,7 @@ void MainFrame::OnLabelClicked(wxMouseEvent& event) {
                     Result->SetLabel("Player O Won!");
                     Result->SetBackgroundColour(wxColor(10, 255, 10)); // Set the result text background color to green
                     Done = true; // Game ends with a win
+
                 }
             }
             currentPlayer++;
