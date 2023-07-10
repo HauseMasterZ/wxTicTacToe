@@ -3,7 +3,7 @@
 This is a simple implementation of the Tic-Tac-Toe game using the wxWidgets library. The game features a graphical user interface (GUI) where players can take turns and try to win by getting three of their symbols in a row.
 
 <p align="center">
-  <img src="https://github.com/HauseMasterZ/face-encryptor/assets/113833707/4f13e09d-1c77-481b-b124-a50d00d3828c" alt="Home Page" height="800"/>
+  <img src="https://github.com/HauseMasterZ/face-encryptor/assets/113833707/4f13e09d-1c77-481b-b124-a50d00d3828c" alt="Home Page"/>
 </p>
 
 
